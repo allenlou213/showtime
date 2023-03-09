@@ -1,3 +1,4 @@
+
 // 获取按钮元素
 const button = document.querySelector('button');
 
@@ -7,8 +8,16 @@ const input = document.querySelector('input[type="text"]');
 // 获取图片元素
 const img = document.querySelector('img');
 
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.querySelector('button');
+  button.addEventListener('click', function() {
+    alert('已将产品添加到购物车！');
+  });
+});
+
 // 为按钮元素添加点击事件监听器
 button.addEventListener('click', function() {
+  alert('已将产品添加到购物车！');
   // 获取文本框中的值
   const searchTerm = input.value;
 
